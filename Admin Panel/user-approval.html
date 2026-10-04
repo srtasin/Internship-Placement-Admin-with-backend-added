@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InternTrack — User Approval</title>
+<link rel="stylesheet" href="user-approval.css">
+</head>
+<body>
+<div class="admin-app">
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="brand-badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z" fill="white"/><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z" fill="white"/></svg></div>
+        <div>
+          <div class="brand-title">InternTrack</div>
+          <div class="brand-sub">University System</div>
+        </div>
+      </div>
+
+      <div class="sidebar-user">
+        <div class="avatar">A</div>
+        <div>
+          <div class="user-name">Admin Portal</div>
+          <div class="user-role">System Administrator</div>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a class="nav-item" href="dashboard.html">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+          <span>Dashboard</span>
+        </a>
+        <a class="nav-item active" href="user-approval.html">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <span>User Approval</span>
+        </a>
+        <a class="nav-item" href="categories.html">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/></svg>
+          <span>Categories</span>
+        </a>
+        <a class="nav-item" href="deadlines.html">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          <span>Deadlines</span>
+        </a>
+        <a class="nav-item" href="reports.html">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6M9 9h1"/></svg>
+          <span>Reports</span>
+        </a>
+        <a class="nav-item" href="announcements.html">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          <span>Announcements</span>
+        </a>
+        <a class="nav-item" href="settings.html">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          <span>Settings</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a class="nav-item" href="login.html">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+          <span>Sign Out</span>
+        </a>
+      </div>
+    </aside>
+
+    <div class="main-col">
+      <header class="topbar">
+        <div class="search-box">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" placeholder="Search...">
+        </div>
+        <div class="topbar-right">
+          <button class="icon-btn" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+            <span class="badge-dot"></span>
+          </button>
+          <div class="avatar">A</div>
+        </div>
+      </header>
+
+      <main class="content">
+        <section class="page active">
+          <div class="page-header">
+            <div>
+              <h1>User Approval</h1>
+              <p class="subtitle">Review and approve user registrations</p>
+            </div>
+          </div>
+
+          <div class="tabs mt-24">
+            <button class="tab active" data-tab="students" type="button">students <span class="tab-count">3</span></button>
+            <button class="tab" data-tab="companies" type="button">companies <span class="tab-count">2</span></button>
+            <button class="tab" data-tab="coordinators" type="button">coordinators <span class="tab-count">1</span></button>
+          </div>
+
+          <div class="card mt-20 tab-panel active" id="tab-students">
+            <table class="data-table">
+              <thead><tr><th>Name</th><th>Email</th><th>Role</th><th>Status</th><th>Actions</th></tr></thead>
+              <tbody>
+                <tr><td colspan="5" class="muted">Loading...</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="card mt-20 tab-panel" id="tab-companies">
+            <table class="data-table">
+              <thead><tr><th>Name</th><th>Email</th><th>Role</th><th>Status</th><th>Actions</th></tr></thead>
+              <tbody>
+                <tr><td colspan="5" class="muted">Loading...</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="card mt-20 tab-panel" id="tab-coordinators">
+            <table class="data-table">
+              <thead><tr><th>Name</th><th>Email</th><th>Role</th><th>Status</th><th>Actions</th></tr></thead>
+              <tbody>
+                <tr><td colspan="5" class="muted">Loading...</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="grid grid-3 mt-20">
+            <div class="card stat-card">
+              <div><p class="stat-label">Student Registrations</p><p class="stat-value" data-pending="student">–</p><p class="stat-sub">Pending approval</p></div>
+              <div class="stat-icon bg-blue">🎓</div>
+            </div>
+            <div class="card stat-card">
+              <div><p class="stat-label">Company Registrations</p><p class="stat-value" data-pending="company">–</p><p class="stat-sub">Pending approval</p></div>
+              <div class="stat-icon bg-green">🏢</div>
+            </div>
+            <div class="card stat-card">
+              <div><p class="stat-label">Coordinator Accounts</p><p class="stat-value" data-pending="coordinator">–</p><p class="stat-sub">Pending approval</p></div>
+              <div class="stat-icon bg-purple">👤</div>
+            </div>
+          </div>
+
+          <div class="card pad mt-16">
+            <h3 class="card-title">Approval Guidelines</h3>
+            <div class="grid grid-3 mt-12">
+              <div class="checklist-box">
+                <p class="checklist-title">Student Checklist</p>
+                <p class="checklist-item">✓ Valid university email</p>
+                <p class="checklist-item">✓ Complete academic profile</p>
+                <p class="checklist-item">✓ No disciplinary record</p>
+              </div>
+              <div class="checklist-box">
+                <p class="checklist-title">Company Checklist</p>
+                <p class="checklist-item">✓ Valid company registration number</p>
+                <p class="checklist-item">✓ Approved industry sector</p>
+                <p class="checklist-item">✓ Signed MoU with university</p>
+              </div>
+              <div class="checklist-box">
+                <p class="checklist-title">Coordinator Checklist</p>
+                <p class="checklist-item">✓ University staff ID verified</p>
+                <p class="checklist-item">✓ Department head approval</p>
+                <p class="checklist-item">✓ Role assignment confirmed</p>
+              </div>
+            </div>
+          </div>
+
+        </section>
+      </main>
+
+      <footer class="page-footer">
+        <div class="footer-brand">
+          <div class="brand-badge-sm"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z" fill="white"/></svg></div>
+          <span>InternTrack</span>
+          <span class="sep">|</span>
+          <span>University Industrial Training System</span>
+        </div>
+        <div class="footer-links">
+          <a href="#">Help</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-copy">© 2025 University Industrial Training Unit · v2.1.0</div>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<script src="auth-guard.js"></script>
+<script src="user-approval.js"></script>
+</body>
+</html>

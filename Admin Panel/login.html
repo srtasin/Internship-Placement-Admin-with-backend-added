@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InternTrack — Sign In</title>
+<link rel="stylesheet" href="login.css">
+</head>
+<body>
+<div class="login-screen">
+  <div class="login-wrap">
+    <div class="login-header">
+      <div class="login-logo"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z" fill="white"/><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z" fill="white"/></svg></div>
+      <h1>Welcome back</h1>
+      <p>Signing in as <span class="accent">Admin</span></p>
+    </div>
+
+    <div class="login-card">
+      <div class="portal-banner">
+        <span class="dot"></span>
+        <span class="portal-text">Admin Portal</span>
+        <a href="#" class="change-role">Change role</a>
+      </div>
+
+      <form id="login-form">
+        <div class="field">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="admin@university.edu.my" value="admin@university.edu.my">
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="••••••••" value="password">
+        </div>
+        <div class="row-between-form">
+          <label class="checkbox-label">
+            <input type="checkbox" id="remember">
+            <span>Remember me</span>
+          </label>
+          <a href="#" class="link-small">Forgot password?</a>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+
+        <div class="divider"><span>or</span></div>
+
+        <button type="button" class="btn btn-outline btn-block">Create Account</button>
+      </form>
+    </div>
+
+    <p class="fine-print">By signing in you agree to our <span class="accent-link">Privacy Policy</span></p>
+  </div>
+
+  <footer class="page-footer login-footer">
+    <div class="footer-brand">
+      <div class="brand-badge-sm"><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z" fill="white"/></svg></div>
+      <span>InternTrack</span>
+      <span class="sep">|</span>
+      <span>University Industrial Training System</span>
+    </div>
+    <div class="footer-links">
+      <a href="#">Help</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="footer-copy">© 2025 University Industrial Training Unit · v2.1.0</div>
+  </footer>
+</div>
+<script src="login.js"></script>
+</body>
+</html>
